@@ -11,45 +11,15 @@ $(document).ready(function(){
 	//Function that will animate the square that is clicked.
 
 	function squarePressed(){
-		//red
-		$(".red").mousedown(function(){
-			$(this).addClass("opacity");
-		});
-		$(".red").mouseup(function(){
-			$(this).removeClass("opacity");
-			playerSequence.push("red");
-			console.log(playerSequence)
-		});
-		//blue
-		$(".blue").mousedown(function(){
-			$(this).addClass("opacity");
-		});
-		$(".blue").mouseup(function(){
-			$(this).removeClass("opacity");
-			playerSequence.push("blue");
-			console.log(playerSequence)
-		});
-		//yellow
-		$(".yellow").mousedown(function(){
-			$(this).addClass("opacity");
-		});
-		$(".yellow").mouseup(function(){
-			$(this).removeClass("opacity");
-			playerSequence.push("yellow");
-			console.log(playerSequence)
-		});
-		//green
-		$(".green").mousedown(function(){
-			$(this).addClass("opacity");
-		});
-		$(".green").mouseup(function(){
-			$(this).removeClass("opacity");
-			playerSequence.push("green");
-			console.log(playerSequence)
-		});
-
-
 		
+		$(".square").mousedown(function(){
+			$(this).addClass("opacity");
+		});
+		$(".square").mouseup(function(){
+			$(this).removeClass("opacity");
+			playerSequence.push($(this).data("color"));
+			console.log(playerSequence);
+		});	
 	};
 
 	squarePressed();
