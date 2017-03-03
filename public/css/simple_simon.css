@@ -1,8 +1,13 @@
-#center-header {
+.center-text {
 	text-align: center;
 }
+.center-button {
+	position:absolute;
+    top: 8%;
+    left: 25%;
+}
 .container {
-	width: 624px;
+	width: 324px;
 	height: 324px;
 	margin: 0 auto;
 	border: 1px solid black;
@@ -11,7 +16,7 @@
 .square {
 	border: 1px solid black;
 	height: 150px;
-	width: 300px;
+	width: 150px;
 	float: left;
 	margin: 3px;
 	padding: 2px;
