@@ -27,7 +27,6 @@ $(document).ready(function(){
 //		
 // -----------------------------------------------------------------
 
-
 	$(".square").click(function(){
 		squarePressed($(this));
 
@@ -58,10 +57,7 @@ $(document).ready(function(){
 			//-----------------------------------
 
 			if(roundNumber >= 5){
-				$(".red-square").addClass("add-animation");
-				$(".blue-square").addClass("add-animation");
-				$(".yellow-square").addClass("add-animation2");
-				$(".green-square").addClass("add-animation2");
+				addMovement();
 			}
 
 		} else {
@@ -146,6 +142,17 @@ $(document).ready(function(){
 		$(".square").removeClass("add-animation2");
 		$(".square").removeClass("red-square-glow");
 		$(".square").removeClass("blue-square-glow");
+	}
+
+// -----------------------------------------------------------------
+//					Add square movement function
+// -----------------------------------------------------------------
+
+	function addMovement(){
+		$(".red-square").addClass("add-animation");
+		$(".blue-square").addClass("add-animation");
+		$(".yellow-square").addClass("add-animation2");
+		$(".green-square").addClass("add-animation2");
 	}
 
 
